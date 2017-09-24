@@ -21,7 +21,8 @@ public class TestGameController {
 
     @Test
     public void testMove() {
-        String[] history = {"f3", "e5", "g4", "Qh4"};
+//        String[] history = {"f3", "e5", "g4", "Qh4"};
+        String[] history = {"e4","c5"};
         ChessRules chessRules = new ChessRulesImpl();
         ChessPosition position = chessRules.getInitialPosition();
         AnMoveInterpreter interpreter = new AnMoveInterpreterImpl(chessRules);

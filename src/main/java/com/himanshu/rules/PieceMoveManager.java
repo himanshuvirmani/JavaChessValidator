@@ -17,7 +17,6 @@ public class PieceMoveManager {
         this.position = position;
     }
 
-    // SUPPRESS CHECKSTYLE NPath
     public Set<ChessBoardCoord> getReachableSquares(ChessBoardCoord coord, ChessRules rules) {
         Set<ChessBoardCoord> reachable = new TreeSet<>();
         ChessPiece piece = position.getPiece(coord);
